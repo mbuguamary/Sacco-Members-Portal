@@ -47,5 +47,6 @@ function showQuestions() {
   document.addEventListener("DOMContentLoaded",()=>{
     const addSuggestions=document.getElementById("querries");
     addSuggestions.addEventListener("submit", postSuggestions);
-
+    const addLoanForm=document.getElementById("addloan");
+    addLoanForm.addEventListener("submit", postLoan);
   })

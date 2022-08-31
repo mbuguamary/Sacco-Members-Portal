@@ -10,5 +10,46 @@
       "id": 2
     }
   ],
-  "loandetails":[]
+  "loandetails": [
+    {
+      "idnumber": "",
+      "amount": "",
+      "totalloan": null,
+      "monthlydeduction": "",
+      "duration": "",
+      "id": 1
+    },
+    {
+      "idnumber": "28576122",
+      "amount": "200000",
+      "totalloan": 40000,
+      "monthlydeduction": "3000",
+      "duration": "3",
+      "id": 2
+    },
+    {
+      "idnumber": "23456721",
+      "amount": "20000",
+      "totalloan": 4000,
+      "monthlydeduction": "4000",
+      "duration": "3",
+      "id": 3
+    },
+    {
+      "idnumber": "",
+      "amount": "",
+      "totalloan": null,
+      "monthlydeduction": "",
+      "duration": "",
+      "id": 4
+    },
+    {
+      "idnumber": "",
+      "amount": "",
+      "totalloan": null,
+      "monthlydeduction": "",
+      "duration": "",
+      "id": 5
+    }
+  ]
 }
