@@ -23,7 +23,20 @@ function showQuestions() {
       body:JSON.stringify(suggestion)
   }).then(response=>response.json);
   }
-
+  function postLoan(evt){
+    evt.preventDefault;
+    const loan={
+    suggestion:document.getElementById("txt1").value
+    }
+    fetch(`${url}/suggestions`,{
+      method:"POST",
+      headers:{
+        "Content-Type": "application/json",
+         Accept: "application/json",
+      },
+      body:JSON.stringify(loan)
+  }).then(response=>response.json);
+  }
   document.addEventListener("DOMContentLoaded",()=>{
     const addSuggestions=document.getElementById("querries");
     addSuggestions.addEventListener("submit", postSuggestions);
