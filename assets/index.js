@@ -12,11 +12,8 @@ function showQuestions() {
   function postSuggestions(evt){
     evt.preventDefault;
     const suggestion={
-    idnumber:document.getElementById("idno").value,
-    amount:document.getElementById("txt1").value,
-    totalloan:document.getElementById("txt1").value,
-    monthlyded:document.getElementById("txt1").value,
-    duration:document.getElementById("txt1").value
+      suggestion:document.getElementById("txt1").value
+    
     }
     fetch(`${url}/suggestions`,{
       method:"POST",
@@ -30,7 +27,11 @@ function showQuestions() {
   function postLoan(evt){
     evt.preventDefault;
     const loan={
-    suggestion:document.getElementById("txt1").value
+      idnumber:document.getElementById("idno").value,
+      amount:document.getElementById("txt1").value,
+      totalloan:document.getElementById("txt1").value,
+      monthlyded:document.getElementById("txt1").value,
+      duration:document.getElementById("txt1").value
     }
     fetch(`${url}/suggestions`,{
       method:"POST",
