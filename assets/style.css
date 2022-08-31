@@ -1,0 +1,13 @@
+nav{
+    background-color: grey;
+    color:white;
+    font-weight: bold;
+    font-size: larger;
+    padding: 1%;
+    border: solid rgb(243, 238, 238);
+    display: flex;
+    /* margin: 3%; */
+    justify-content: space-between;
+    position: static;
+    align-items: center;
+    }
