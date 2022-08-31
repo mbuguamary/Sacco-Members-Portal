@@ -26,14 +26,16 @@ function showQuestions() {
   }
   function postLoan(evt){
     evt.preventDefault;
+    const amount =parseInt(document.getElementById("amount").value);
+    totalloan=amount*0.2;
     const loan={
       idnumber:document.getElementById("idno").value,
-      amount:document.getElementById("txt1").value,
-      totalloan:document.getElementById("txt1").value,
-      monthlyded:document.getElementById("txt1").value,
-      duration:document.getElementById("txt1").value
+      amount:document.getElementById("amount").value,
+      totalloan:totalloan,
+      monthlydeduction:document.getElementById("monthlyded").value,
+      duration:document.getElementById("duration").value
     }
-    fetch(`${url}/suggestions`,{
+    fetch(`${url}/loandetails`,{
       method:"POST",
       headers:{
         "Content-Type": "application/json",
