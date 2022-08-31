@@ -45,4 +45,12 @@ nav{
             height:30px;
             color:red;
         }
-        
+        .footer{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: grey;
+            color:white;
+            padding-top: 20px;
+            
+        }
