@@ -1,4 +1,13 @@
 {
-    "members":[],
-    "suggestions":[]
+  "members": [],
+  "suggestions": [
+    {
+      "suggestion": "\n            test",
+      "id": 1
+    },
+    {
+      "suggestion": "testing\n            ",
+      "id": 2
+    }
+  ]
 }
