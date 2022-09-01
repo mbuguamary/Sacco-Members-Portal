@@ -1,9 +1,9 @@
 
 url="http://localhost:3000"
-const memberName=document.getElementById("member");
-const memberNo=document.getElementById("memberNo");
-const mobile=document.getElementById("mobile");
-const idNo=document.getElementById("idno");
+  memberName=document.getElementById("Member");
+  memberNo=document.getElementById("memberNo");
+  mobileNo=document.getElementById("mobile");
+  idNo=document.getElementById("idno");
 
 
 document.getElementById("showNotes").style.display="none";
@@ -49,20 +49,52 @@ function showQuestions() {
       body:JSON.stringify(loan)
   }).then(response=>response.json);
   }
-  function searchMember(evt){
-   evt.preventDefault;
-   fetch(`${url}/members/1`)
-   .then(response=>response.json)
+  function postMember(evt){
+    evt.preventDefault;
+    const member={
+     membername:document.getElementById("Member").value,
+      memberno:document.getElementById("memberNo").value,
+      mobile:document.getElementById("mobile").value,
+      idno:document.getElementById("idno").value
+    }
+    fetch(`${url}/memberdata`,{
+      method:"POST",
+      headers:{
+        "Content-Type": "application/json",
+         Accept: "application/json",
+      },
+      body:JSON.stringify(member)
+  }).then(response=>response.json);
+  }
+  function getMember(evt){
+    evt.preventDefault;
+   fetch(`${url}/memberdata/1`)
+   .then(response=>response.json())
+   console.log(response)
    .then(data=>{
-
+    memberName=data.membername;
+    memberNo=data.memberno;
+    mobileNo=data.mobile;
+    idNo=data.idno
    })
+  
+   .catch(error=>{
+    console.log(error);
+  })
 }
   
 
 
   document.addEventListener("DOMContentLoaded",()=>{
+    
+    const searchMemberbtn=document.getElementById("searchMemberb");
+   searchMemberbtn.addEventListener("onclick",getMember);
+   const addMember=document.getElementById("sbtdata");
+   addMember.addEventListener("submit",postMember);
     const addSuggestions=document.getElementById("querries");
     addSuggestions.addEventListener("submit", postSuggestions);
     const addLoanForm=document.getElementById("addloan");
     addLoanForm.addEventListener("submit", postLoan);
+    //getMember();
+
   })
