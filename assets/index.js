@@ -1,5 +1,10 @@
 
 url="http://localhost:3000"
+const memberName=document.getElementById("member");
+const memberNo=document.getElementById("memberNo");
+const mobile=document.getElementById("mobile");
+const idNo=document.getElementById("idno");
+
 
 document.getElementById("showNotes").style.display="none";
 function showNotes() {
@@ -44,6 +49,17 @@ function showQuestions() {
       body:JSON.stringify(loan)
   }).then(response=>response.json);
   }
+  function searchMember(evt){
+   evt.preventDefault;
+   fetch(`${url}/members/1`)
+   .then(response=>response.json)
+   .then(data=>{
+
+   })
+}
+  
+
+
   document.addEventListener("DOMContentLoaded",()=>{
     const addSuggestions=document.getElementById("querries");
     addSuggestions.addEventListener("submit", postSuggestions);
