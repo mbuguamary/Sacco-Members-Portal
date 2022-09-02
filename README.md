@@ -10,7 +10,7 @@
 + [Technology-Used]
 + [Future-development]
 + [Licence]
-+[Authors-Info]
++ [Authors-Info]
 ## Description
 <p>This is a website where members can check their share statement apply for loans and check their dividends</p>
 
@@ -35,11 +35,11 @@
 
 + CSS - which was used to style the pages incuding the left aside navigation bar.
 + Javascript- which adds functionalty to the website.
-+ json server- holds the backend and needs to be running for the website to work.
++ Json server- holds the backend and needs to be running for the website to work.
 
 ## future Development
 + Create a member portal using react which can interact with all the forms
-+ have abackend database like postgresql where i can get information of the members
++ have a backend database like postgresql where i can get information of the members
 
 ## Licence
 <p>MIT License</p>
@@ -55,4 +55,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Authors Info
 + Slack Profile -Mary Mbugua
 
-+ Linked - Mary Mbugua
++ Linkedin - Mary Mbugua
