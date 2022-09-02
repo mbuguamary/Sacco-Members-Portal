@@ -14,6 +14,19 @@ function showNotes() {
 function showQuestions() {
   document.getElementById("querries").style.display="block";
   }
+  
+  function computeLoan() {
+    const amount=parseInt(document.getElementById("amt").value);
+    const months=parseInt(document.getElementById("duration").value);
+    const totalamount=amount+amount*0.2;
+    document.getElementById("loanamt").innerHTML=totalamount;
+    //const itemElement=document.createElement("li");
+    //itemElement.innerHTML =totalamount;
+   //const divContainer= document.getElementById("showloan");
+    //divContainer=appendChild(itemElement);
+  }
+
+
   function postSuggestions(evt){
     evt.preventDefault;
     const suggestion={
@@ -82,7 +95,14 @@ function showQuestions() {
     console.log(error);
   })
 }
+  const proceed=document.getElementById("proceed");
+  proceed.addEventListener("click",()=>{
+  alert("you can now proceed");
+  });
   
+
+
+
 
 
   document.addEventListener("DOMContentLoaded",()=>{
