@@ -5,26 +5,41 @@
 
 ## Table of Content
 + [Description]
++ [Features]
 + [Installation-Requirement]
 + [Technology-Used]
-+ [Reference]
++ [Future-development]
 + [Licence]
 +[Authors-Info]
 ## Description
 <p>This is a website where members can check their share statement apply for loans and check their dividends</p>
 
+## Features
++ Registration of new members
++ Application of instant loans
++ download of loan application form
++ download of deduction form
++ view sacco notes
++ post suggestions/questions
+
+
 ## Installation
 + Requirements
-+ ither a computer,phone,tablet or an Ipad
-
++ Either a computer,phone,tablet or an Ipad
 + An access to the Internet
++ Git clone https://github.com/mbuguamary/Sacco-Members-Portal
++ live demo click[here] https://mbuguamary.github.io/Sacco-Members-Portal/
 
 ## Technology Used
 + HTML - which was used to build the structure of the pages.
 
-+ CSS - which was used to style the pages incuding the left aside navigation bar
-+ Javascript- which adds functionalty to the website
++ CSS - which was used to style the pages incuding the left aside navigation bar.
++ Javascript- which adds functionalty to the website.
++ json server- holds the backend and needs to be running for the website to work.
 
+## future Development
++ Create a member portal using react which can interact with all the forms
++ have abackend database like postgresql where i can get information of the members
 
 ## Licence
 <p>MIT License</p>
