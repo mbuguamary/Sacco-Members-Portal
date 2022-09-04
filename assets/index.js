@@ -18,7 +18,7 @@ function showQuestions() {
   function computeLoan() {
     const amount=parseInt(document.getElementById("amt").value);
     const months=parseInt(document.getElementById("duration").value);
-    const totalamount=amount+amount*0.2;
+    const totalamount=amount+amount*0.13;
     document.getElementById("loanamt").innerHTML=totalamount;
     //const itemElement=document.createElement("li");
     //itemElement.innerHTML =totalamount;
@@ -45,7 +45,9 @@ function showQuestions() {
   function postLoan(evt){
     evt.preventDefault;
     const amount =parseInt(document.getElementById("amount").value);
-    totalloan=amount*0.2;
+   
+
+    totalloan=amount+amount*0.13;
     const loan={
       idnumber:document.getElementById("idno").value,
       amount:document.getElementById("amount").value,
